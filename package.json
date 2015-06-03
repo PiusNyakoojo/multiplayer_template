@@ -1,8 +1,8 @@
 {
-  "name": "Multiplayer template",
+  "name": "multiplayer-template",
   "version": "0.0.1",
-  "description": "Realtime multiplayer gaming template for browser",
-  "scripts":{
+  "description": "realtime multiplayer gaming template for browser",
+  "scripts": {
     "start": "node app.js"
   },
   "main": "app.js",
