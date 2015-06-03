@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="//threejs.org/build/three.js"></script>
+    <script src="/js/client_world.js"></script>
+
+    <style>
+        body {
+            margin: 0px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+
+<div id="container"></div>
+<script>
+
+    var socket = io();
+
+    socket.on('updatePosition', function(data){
+        updatePlayerPosition(data);
+    });
+    socket.on('connect', function(){
+        loadWorld();
+        socket.emit('requestOldPlayers', {});
+    });
+    socket.on('createPlayer', function(data){
+        createPlayer(data);
+    });
+    socket.on('addOtherPlayer', function(data){
+        addOtherPlayer(data);
+    });
+    socket.on('removeOtherPlayer', function(data){
+        removeOtherPlayer(data);
+    });
+
+</script>
+</body>
+</html>
