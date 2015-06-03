@@ -46,6 +46,8 @@ http.listen(port, ip_address, function(){
     console.log( "Listening on " + ip_address + ", server_port " + port );
 });
 
-//http.listen(3000, function(){
-//   console.log('listening on *: 3000');
-//});
+/*
+http.listen(3000, function(){
+   console.log('listening on *: 3000');
+});
+*/

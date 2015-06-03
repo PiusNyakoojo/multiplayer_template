@@ -1,7 +1,11 @@
 {
-  "name": "practice01",
+  "name": "Multiplayer template",
   "version": "0.0.1",
-  "description": "practice",
+  "description": "Realtime multiplayer gaming template for browser",
+  "scripts":{
+    "start": "node app.js"
+  },
+  "main": "app.js",
   "dependencies": {
     "express": "^4.10.2",
     "socket.io": "^1.3.5",
