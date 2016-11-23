@@ -10,6 +10,7 @@ app.get('/js/client_world.js', function(req, res){
     res.sendFile(__dirname + '/js/client_world.js');
 });
 
+// Handle connection
 io.on('connection', function(socket){
     console.log('a user connected');
 
