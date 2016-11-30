@@ -1,3 +1,4 @@
+// store all players
 var players = [];
 
 function Player(){
